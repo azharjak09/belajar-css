@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #333;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ff5500;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ff5500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ff5500;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #333;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ff5500;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #a1938b;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;/;
+  background: #ff5500;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Zar</h1>
+  <p>azharjak09</p>
+</div>
+
+<div class="topnav">
+  <a href="d:\SEKOLAH\Kelas XI\Pweb\belajar-css\CSS-Tutorial\CSS-Float.html">Float</a>
+  <a href="d:\SEKOLAH\Kelas XI\Pweb\belajar-css\CSS-Tutorial\CSS-FlexBox.html">FlexBox</a>
+  <a href="d:\SEKOLAH\Kelas XI\Pweb\belajar-css\CSS-Tutorial\CSS-Grid.html">Grid</a>
+  <a href="https://github.com/azharjak09" style="float:right">GitHub</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Profil</h2>
+      <h5>09 January 2008</h5>
+      <img src="d:\azharrrrr\azharrrrr\ayamjak.jpg" alt="Cinque Terre" width="300" height="400">
+      <p>Azhar Aulia</p>
+      <p>My name is Azhar Aulia. I was born in Subang on January 9, 2008, and am currently a student at SMKN 2 Subang.</p>
+    </div>
+    <div class="card">
+      <h2>!</h2>
+      <h5>Description</h5>
+      <img src="d:\azharrrrr\azharrrrr\1654699657236.jpg" alt="Cinque Terre" width="500" height="330">
+      <p></p>
+      <p>Since I was little, I like to eat and sleep, and finally I have a dream to become President. As a form of encouragement, I have a motto "being an adult is when we can smile in the face of various difficulties".</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <source src="c:\Users\asus\Downloads\@beybey2897-7394479026825448710-audio.mp3" type="audio/mpeg">
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Riwayat Pendidikan</h3>
+      <img src="c:\Users\asus\Downloads\WhatsApp Image 2024-09-03 at 09.26.31 (1).jpeg" alt="Cinque Terre" width="180" height="320"> 
+
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+</body>
+</html>
+
+
